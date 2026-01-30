@@ -1,0 +1,31 @@
+(in-package #:mfiano.lib.base.util)
+
+(defconstant min/i8 #.(- (ash 1 (1- 8))))
+(defconstant min/i16 #.(- (ash 1 (1- 16))))
+(defconstant min/i24 #.(- (ash 1 (1- 24))))
+(defconstant min/i32 #.(- (ash 1 (1- 32))))
+(defconstant min/i64 #.(- (ash 1 (1- 64))))
+(defconstant max/i8 #.(1- (ash 1 (1- 8))))
+(defconstant max/i16 #.(1- (ash 1 (1- 16))))
+(defconstant max/i24 #.(1- (ash 1 (1- 24))))
+(defconstant max/i32 #.(1- (ash 1 (1- 32))))
+(defconstant max/i64 #.(1- (ash 1 (1- 64))))
+
+(defconstant max/u8 #.(1- (ash 1 8)))
+(defconstant max/u16 #.(1- (ash 1 16)))
+(defconstant max/u24 #.(1- (ash 1 24)))
+(defconstant max/u32 #.(1- (ash 1 32)))
+(defconstant max/u64 #.(1- (ash 1 64)))
+
+(defconstant min/fixnum #.most-negative-fixnum)
+(defconstant max/fixnum #.most-positive-fixnum)
+
+(defconstant min/f32+ #.least-positive-single-float)
+(defconstant min/f32- #.least-negative-single-float)
+(defconstant max/f32+ #.most-positive-single-float)
+(defconstant max/f32- #.most-negative-single-float)
+
+(defconstant min/f64+ #.least-positive-double-float)
+(defconstant min/f64- #.least-negative-double-float)
+(defconstant max/f64+ #.most-positive-double-float)
+(defconstant max/f64- #.most-negative-double-float)
