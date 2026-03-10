@@ -21,6 +21,7 @@
    #:once-only
    #:parse-ordinary-lambda-list
    #:shuffle
+   #:string-designator
    #:symbolicate
    #:when-let
    #:when-let*
@@ -99,6 +100,7 @@
   (:export
    #:array-size
    #:fn
+   #:non-empty-string
    #:non-nil-list
    #:non-nil-sequence
    #:non-nil-symbol
@@ -206,6 +208,7 @@
    #:string-empty?
    #:string-ends-with?
    #:string-merge
+   #:string-non-empty?
    #:string-split
    #:string-starts-with?
    #:string-trim-whitespace)

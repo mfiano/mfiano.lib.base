@@ -77,4 +77,5 @@
 (deftype non-nil-symbol () '(and (not null) symbol))
 (deftype non-nil-list () '(and (not null) a:proper-list))
 (deftype non-nil-sequence () '(and (not null) sequence))
+(deftype non-empty-string () '(satisfies string-non-empty?))
 (deftype package-designator () '(or package a:string-designator))

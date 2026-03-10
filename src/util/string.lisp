@@ -9,10 +9,15 @@
   (declare (optimize (speed 3)))
   (apply #'concatenate 'string strings))
 
-(define-ftype string-empty? (string) boolean)
+(define-ftype string-empty? (string-designator) boolean)
 (defun string-empty? (string)
   (declare (optimize (speed 3)))
-  (string= string ""))
+  (and (stringp string) (string= string "")))
+
+(define-ftype string-non-empty? (string-designator) boolean)
+(defun string-non-empty? (string)
+  (declare (optimize (speed 3)))
+  (and (stringp string) (not (string-empty? string))))
 
 (define-ftype string-split (string) list)
 (defun string-split (string)
