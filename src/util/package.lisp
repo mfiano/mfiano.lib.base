@@ -17,6 +17,7 @@
    #:if-let
    #:map-combinations
    #:map-permutations
+   #:map-product
    #:mappend
    #:once-only
    #:parse-ordinary-lambda-list
