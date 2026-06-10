@@ -13,6 +13,7 @@
    #:define-constant
    #:deletef
    #:ensure-list
+   #:flatten
    #:format-symbol
    #:if-let
    #:map-combinations
